@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>컴퓨티드 속성 - 기본 문법</h1>
-    <div>{{ reversedMessage }}</div>
+    <div>
+      {{ reversedMessage }}
+    </div>
   </div>
 </template>
 

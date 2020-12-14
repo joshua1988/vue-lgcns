@@ -11,8 +11,17 @@ import VuexAntiPattern from "@/components/VuexAntiPattern.vue";
 
 export default {
   components: {
-    LearnVuex,
-    VuexAntiPattern
+    // "컴포넌트 이름": 컴포넌트 내용,
+    // NOTE: 컴포넌트 등록 방식
+    // "learn-vuex": LearnVuex,
+    // "LearnVuex": LearnVuex,
+    // LearnVuex: LearnVuex,
+    // LearnVuex,
+    LearnVuex: () => import("@/components/LearnVuex.vue")
+
+    // "vuex-anti-pattern": VuexAntiPattern
+    // LearnVuex,
+    // VuexAntiPattern
   }
 };
 </script>

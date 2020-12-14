@@ -3,10 +3,8 @@
     <!-- TODO: 컴퓨티드 속성 문법 정리해 보기 -->
     <h1>컴퓨티드 속성의 클래스 분기 처리</h1>
     <div>
-      <p
-        class="greeting"
-        v-bind:class="{ 'font-large': largeFont, error: fontColor === 'red' }"
-      >
+      <!-- TODO: 아래 클래스 바인딩을 컴퓨티드 속성으로 분리해주세요. -->
+      <p class="greeting" :class="fontClasses">
         안녕하세요 LG CNS 임직원 여러분
       </p>
       <button @click="sizeupFont">폰트 크기 150% 확대</button>
@@ -26,6 +24,12 @@ export default {
       largeFont: false,
       fontColor: "black"
     };
+  },
+
+  computed: {
+    fontClasses() {
+      return { "font-large": this.largeFont, error: this.fontColor === "red" };
+    }
   },
 
   methods: {

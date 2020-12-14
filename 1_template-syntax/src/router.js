@@ -10,7 +10,7 @@ export default new VueRouter({
   routes: [
     { path: "/", redirect: "/computed" },
     { path: "/computed", component: ComputedView },
-    { path: "/input", component: InputView },
+    { path: "/input", component: () => import("./views/InputView.vue") },
     { path: "*", component: NotFoundView }
   ]
 });
