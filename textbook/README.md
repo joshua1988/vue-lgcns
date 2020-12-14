@@ -38,6 +38,7 @@
 - [NHN - Dooray 협업툴](https://dooray.com/home/)
 - [현대자동차](https://www.hyundai.com/)
 - [삼성생명](https://www.samsunglife.com/)
+- [롯데쇼핑](https://www.lotteon.com/)
 - [마켓컬리](https://www.kurly.com/)
 - [크몽](https://kmong.com/)
 
