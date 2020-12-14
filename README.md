@@ -5,6 +5,23 @@ LG CNS 임직원 대상 Vue.js 특강 자료 리포지토리입니다
 
 - [Cracking Vue.js](https://joshua1988.github.io/vue-camp)
 
+## 수업 중 언급한 자료
+
+- [Google Web Fundamentals](https://developers.google.com/web/fundamentals)
+- [Google Web Dev](https://web.dev/learn/)
+- [VSCode jsconfig file](https://code.visualstudio.com/docs/languages/jsconfig)
+- [뷰 공식 문서 - Instance Lifecycle](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram)
+- [타입스크립트 핸드북](https://joshua1988.github.io/ts/)
+- [Vue Template Explorer](https://template-explorer.vuejs.org/)
+- [ESLint 공식 문서](https://eslint.org/)
+- [Prettier 공식 문서](https://prettier.io/)
+- [ESLint Plugin Vue](https://eslint.vuejs.org/)
+- [ESLint + Prettier 개발 환경 설정 안내 글](https://joshua1988.github.io/web-development/vuejs/boost-productivity/)
+- [Webpack 핸드북](https://joshua1988.github.io/webpack-guide/build/npm-module-install.html)
+- [Dynamic + Async Component](https://vuejs.org/v2/guide/components-dynamic-async.html#ad)
+- [Vue.js 폴더 구조 안내 글](https://joshua1988.github.io/vue-camp/advanced/folder-structure.html)
+- [Vue.js Enterprise Boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
+
 ## 개발 환경 구성
 
 - [Chrome](https://www.google.com/intl/ko/chrome/)
