@@ -9,6 +9,17 @@
 | 16:00 ~ 16:40 | Vue.js 실무 환경과 협업 | 40분 |
 | 16:40 ~ 16:55 | Q & A | 15분 |
 
+# 2주차 수업
+
+실무 개발을 위한 Vue.js 핵심 문법과 개념 리뷰
+
+|     **시간**     |                **내용**                | **소요 시간** |
+|:------------:|:----------------------------------:|:---------:|
+| 15:10 ~ 15:50 | 상태 관리 | 40분 |
+| 15:50 ~ 16:00 | 쉬는 시간 | 10분 |
+| 16:00 ~ 16:40 | 실무에서 주의해야 하는 Vue.js 4가지 특징 | 40분 |
+| 16:40 ~ 16:55 | Q & A | 15분 |
+
 ## 목차
 
 - [Vue.js 핵심 문법과 개념 리뷰](#vuejs-기본-개념-리뷰)
@@ -62,6 +73,13 @@
 - [Vuex 쉽게 이해하기](https://github.com/joshua1988/vue-lgcns/blob/main/2_state-management/src/components/LearnVuex.vue)
 - [Vuex를 잘못 활용한 사례](https://github.com/joshua1988/vue-lgcns/blob/main/2_state-management/src/components/VuexAntiPattern.vue)
 - Vuex는 언제 써야할까?
+
+## 실무에서 주의해야할 Vue.js 4가지 특징
+
+- Reactivity
+- DOM 조작
+- 인스턴스 라이프 사이클
+- ref 속성
 
 ## 팀 개발 생산성을 높이는 개발 환경 설정 방법과 배포 환경 설정
 
