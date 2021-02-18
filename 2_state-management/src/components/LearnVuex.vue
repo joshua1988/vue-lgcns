@@ -4,6 +4,7 @@
     <div>
       <p>{{ message }}</p>
       <button @click="addString">add</button>
+      <p>{{ reversedMessage }}</p>
     </div>
     <hr />
     <h1>Vuex 로직</h1>
@@ -18,8 +19,18 @@
 export default {
   data() {
     return {
-      message: "hi"
+      message: "hi",
+      abcd: 100
     };
+  },
+
+  computed: {
+    reversedMessage() {
+      return this.message
+        .split("")
+        .reverse()
+        .join("");
+    }
   },
 
   methods: {
@@ -28,7 +39,15 @@ export default {
     },
     addStringByVuex() {
       this.$store.commit("addMessage");
+    },
+    async getMyUser() {
+      var user = await this.$store.dispatch("FETCH_USER");
+      this.user = user;
     }
+  },
+
+  created() {
+    console.log(this.$store);
   }
 };
 </script>

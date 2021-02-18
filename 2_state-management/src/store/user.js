@@ -11,3 +11,5 @@ export default {
     }
   }
 };
+
+// UserProfile.vue

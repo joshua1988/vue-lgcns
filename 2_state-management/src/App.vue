@@ -1,27 +1,46 @@
 <template>
   <div>
-    <LearnVuex></LearnVuex>
-    <VuexAntiPattern></VuexAntiPattern>
+    <!-- <LearnVuex></LearnVuex> -->
+    <!-- <input type="text" v-model="username" /> -->
+    <input type="text" :value="username" @input="updateInput" />
+    <!-- <FormInput v-model=""></FormInput>
+    <FormInput v-model=""></FormInput>
+    <FormButton></FormButton> -->
+    <!-- <p>{{ counter }}</p> -->
+    <div v-for="user in users">
+      <input type="checkbox" name="" id="" :checked="user.checked" />
+    </div>
   </div>
 </template>
 
 <script>
-import LearnVuex from "@/components/LearnVuex.vue";
-import VuexAntiPattern from "@/components/VuexAntiPattern.vue";
-
 export default {
-  components: {
-    // "컴포넌트 이름": 컴포넌트 내용,
-    // NOTE: 컴포넌트 등록 방식
-    // "learn-vuex": LearnVuex,
-    // "LearnVuex": LearnVuex,
-    // LearnVuex: LearnVuex,
-    // LearnVuex,
-    LearnVuex: () => import("@/components/LearnVuex.vue")
+  data() {
+    return {
+      // counter: 0,
+      // username: ""
+      users: []
+    };
+  },
 
-    // "vuex-anti-pattern": VuexAntiPattern
-    // LearnVuex,
-    // VuexAntiPattern
+  methods: {
+    updateInput() {
+      Vue.set();
+      // this.username = event.target.value;
+      this.user.checked = true;
+      this.$set(this.users, 'checked', false);
+    },
+    async fetchUsers() {
+      const { data } = await axios.get("users");
+      this.users = data.users.map(user => {
+        ...user,
+        checked: false
+      }); // [{}, {}, {}, {} ]
+    }
+  },
+
+  created() {
+    this.fetchUsers();
   }
 };
 </script>
